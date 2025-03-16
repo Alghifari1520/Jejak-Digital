@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Kenali lebih lanjut tentang saya!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#wishlist">Wish List</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#prestasi">Prestasi</a></li>
+            <li><a href="#diary">Diary</a></li>
+        </ul>
+    </nav>
+
+    <section id="profil">
+        <h2>Profil Saya</h2>
+        <img src="profile.jpg" alt="Foto Profil" class="profile-pic">
+        <p>Halo! Nama saya <b>[Nama Anda]</b>. Saya adalah seorang [pekerjaan/status pendidikan]. Saya memiliki minat dalam [hobi atau bidang yang disukai].</p>
+    </section>
+
+    <section id="wishlist">
+        <h2>Wish List</h2>
+        <ul id="wish-list">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <input type="text" id="new-wish" placeholder="Tambahkan wishlist...">
+        <button onclick="addWish()">Tambah</button>
+    </section>
+
+    <section id="kegiatan">
+        <h2>Kegiatan Sehari-hari</h2>
+        <p>Setiap hari saya memulai dengan bangun pagi, berolahraga, dan melakukan berbagai aktivitas seperti belajar, bekerja, dan bersosialisasi.</p>
+    </section>
+
+    <section id="pengalaman">
+        <h2>Pengalaman</h2>
+        <p></p>
+    </section>
+
+    <section id="prestasi">
+        <h2>Prestasi</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section id="diary">
+        <h2>Diary</h2>
+        <textarea id="diary-entry" placeholder="Tulis sesuatu..."></textarea>
+        <button onclick="saveDiary()">Simpan</button>
+        <button onclick="clearDiary()">Hapus Diary</button>
+        <div id="diary-content"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Website Perkenalan Diri</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
