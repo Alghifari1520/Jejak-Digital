@@ -77,3 +77,345 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* ========== 1. Latar Belakang Menyala ========== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff8c00);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animasi background agar lebih hidup */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+    50% { background: linear-gradient(45deg, #ff8c00, #ff416c); }
+    100% { background: linear-gradient(45deg, #ff4b2b, #ff8c00); }
+}
+
+/* ========== 2. Kotak Konten dengan Efek Menyala ========== */
+section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* ========== 3. Tombol Modern dengan Hover Efek ========== */
+button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff8c00;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* ========== 4. Input dengan Tampilan Elegan ========== */
+input[type="text"], input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ========== 5. Daftar List dengan Efek Hover ========== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ========== 6. Gambar Profil dengan Efek Lingkaran ========== */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+/* ========== 1. Latar Belakang Gelap dengan Efek Menyala ========== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2c003e, #600030, #8c2f00);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animasi background agar terlihat lebih hidup */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(45deg, #2c003e, #600030); }
+    50% { background: linear-gradient(45deg, #8c2f00, #2c003e); }
+    100% { background: linear-gradient(45deg, #600030, #8c2f00); }
+}
+
+/* ========== 2. Kotak Konten dengan Efek Glow Lebih Gelap ========== */
+section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* ========== 3. Tombol Modern dengan Glow Merah Gelap ========== */
+button {
+    background: #600030;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+button:hover {
+    background: #8c2f00;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(255, 50, 50, 0.7);
+}
+
+/* ========== 4. Input dengan Tampilan Lebih Gelap ========== */
+input[type="text"], input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* ========== 5. Daftar List dengan Efek Glow ========== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: #ffaaaa;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ========== 6. Gambar Profil dengan Glow Lebih Gelap ========== */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(255, 50, 50, 0.6);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 50, 50, 1);
+}
+/* ========== 1. Kontainer Foto Profil ========== */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* ========== 2. Foto Profil ========== */
+#profile-image {
+    width: 80px;  /* Ukuran kecil */
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.7);
+    transition: 0.3s;
+}
+
+/* ========== 3. Efek Hover ========== */
+#profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(300, 150, 150, 1);
+}
+/* ========== 1. Kontainer Foto Profil ========== */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* ========== 2. Foto Profil ========== */
+#profile-image {
+    width: 80px;  /* Ukuran kecil */
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.7);
+    transition: 0.3s;
+}
+
+/* ========== 3. Efek Hover ========== */
+#profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 100, 100, 1);
+}
+
+/* ========== 4. Input File ========== */
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* ========== 5. Tombol Hapus Foto ========== */
+button {
+    background: #600030;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+}
+
+button:hover {
+    background: #8c2f00;
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(255, 50, 50, 0.7);
+}
+/* ========== 1. Kontainer Musik ========== */
+.music-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ========== 2. Tombol Musik Glow ========== */
+#music-button {
+    background: transparent;
+    color: #00fff7;
+    border: 2px solid #00fff7;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00fff7;
+}
+
+#music-button:hover {
+    background: #00fff7;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00fff7;
+}
+/* ========== 1. Kontainer Musik ========== */
+.music-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ========== 2. Input File Musik ========== */
+#music-file {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #00fff7;
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: #00fff7;
+    font-size: 14px;
+}
+
+/* ========== 3. Nama Lagu ========== */
+#music-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00fff7;
+    margin-bottom: 10px;
+}
+
+/* ========== 4. Tombol Musik Glow ========== */
+#music-button {
+    background: transparent;
+    color: #00fff7;
+    border: 2px solid #00fff7;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00fff7;
+}
+
+#music-button:hover {
+    background: #00fff7;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00fff7;
+}

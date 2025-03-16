@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perkenalan Diri</title>
     <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
 </head>
 <body>
+    <h1>Profil Saya</h1>
 
-    <header>
-        <h1>Selamat Datang di Website Saya</h1>
-        <p>Kenali lebih lanjut tentang saya!</p>
-    </header>
+    <!-- Kontainer Foto Profil -->
+    <div class="profile-container">
+        <img id="profile-image" src="images/default-profile.png" alt="Foto Profil">
+    </div>
+
+    <!-- Input untuk mengunggah foto -->
+    <input type="file" id="file-input" accept="image/*">
+    
+    <!-- Tombol Hapus Foto -->
+    <button onclick="hapusFoto()">Hapus Foto</button>
+
+        <script src="script.js"></script>
+</body>
 
     <nav>
         <ul>
@@ -26,40 +40,41 @@
 
     <section id="profil">
         <h2>Profil Saya</h2>
-        <img src="profile.jpg" alt="Foto Profil" class="profile-pic">
-        <p>Halo! Nama saya <b>[Nama Anda]</b>. Saya adalah seorang [pekerjaan/status pendidikan]. Saya memiliki minat dalam [hobi atau bidang yang disukai].</p>
+        
+        <p>HALO!! NAMA SAYA <b>FAWAZ ALGHIFARI ANNAJIB</b>. 
+            <p>SAYA ADALAH SEORANG PELAJAR DI SMKN 26 JAKARTA</p>
+            <p>SAYA MEMILIKI MINAT DAN BAKAT DALAM DUNIA SENI DAN KREATIFITAS</p>
     </section>
 
     <section id="wishlist">
         <h2>Wish List</h2>
         <ul id="wish-list">
-            <li></li>
-            <li></li>
-            <li></li>
+    
         </ul>
         <input type="text" id="new-wish" placeholder="Tambahkan wishlist...">
         <button onclick="addWish()">Tambah</button>
     </section>
-
-    <section id="kegiatan">
-        <h2>Kegiatan Sehari-hari</h2>
-        <p>Setiap hari saya memulai dengan bangun pagi, berolahraga, dan melakukan berbagai aktivitas seperti belajar, bekerja, dan bersosialisasi.</p>
-    </section>
-
-    <section id="pengalaman">
-        <h2>Pengalaman</h2>
-        <p></p>
-    </section>
-
     <section id="prestasi">
         <h2>Prestasi</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <ul id="prestasi-list"></ul>
+        <input type="text" id="new-prestasi" placeholder="Tambah Prestasi...">
+        <button onclick="addPrestasi()">Tambah</button>
     </section>
-
+    
+    <section id="pengalaman">
+        <h2>Pengalaman</h2>
+        <ul id="pengalaman-list"></ul>
+        <input type="text" id="new-pengalaman" placeholder="Tambah Pengalaman...">
+        <button onclick="addPengalaman()">Tambah</button>
+    </section>
+    
+    <section id="kegiatan">
+        <h2>Kegiatan Sehari-hari</h2>
+        <ul id="kegiatan-list"></ul>
+        <input type="text" id="new-kegiatan" placeholder="Tambah Kegiatan...">
+        <button onclick="addKegiatan()">Tambah</button>
+    </section>
+    
     <section id="diary">
         <h2>Diary</h2>
         <textarea id="diary-entry" placeholder="Tulis sesuatu..."></textarea>
